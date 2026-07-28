@@ -2,7 +2,7 @@
 
 ## Copy and links
 
-Edit the replacement table in `tools/personalize.mjs`, then run `node tools/personalize.mjs`. Keep both plain and escaped (`\\u002F`) URL variants when a value also appears in Nuxt payload JSON.
+Edit the replacement table in `tools/personalize.mjs`, then run `node tools/personalize.mjs`, `node tools/localize-zh.mjs`, and `node tools/optimize.mjs` in that order. Keep both plain and escaped (`\\u002F`) URL variants when a value also appears in Nuxt payload JSON.
 
 The loader name and runtime domain are in `_nuxt/CEHeSSSx.js`. Footer credit text is in `_nuxt/DwgGGfV0.js`. These are minified build artifacts, so search for the existing FrigidCrow string before editing.
 
@@ -16,10 +16,10 @@ Project routes retain their original slugs because changing them also requires c
 
 | Route | Current label |
 | --- | --- |
-| `/companies/debyt/` | Selected Work |
-| `/companies/rava/` | Experiments |
+| `/companies/debyt/` | 精选作品 |
+| `/companies/rava/` | 实验项目 |
 | `/companies/100s/` | 100s |
-| `/companies/bloxtel/` | About |
+| `/companies/bloxtel/` | 关于我 |
 
 The four project logo SVGs are under `cdn.sanity.io/files/`. Replace files in place to keep payload references stable.
 

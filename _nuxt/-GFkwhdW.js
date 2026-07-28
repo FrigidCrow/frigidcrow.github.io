@@ -85,7 +85,7 @@ return (_ctx, _cache) => {
 
   return withDirectives((openBlock(), createBlock(_component_NuxtLink, {
     to: "/",
-    "aria-label": "Hyperlink to home page",
+    "aria-label": "返回首页",
     class: normalizeClass([{ 'header-logo--visible': unref(isVisible) }, "header-logo"]),
     onClick: onLogoClick
   }, {

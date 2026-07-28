@@ -25,7 +25,7 @@ return (_ctx, _cache) => {
   }, [
     createVNode(_component_BaseButton, {
       class: "",
-      label: "Return to homepage",
+      label: "返回首页",
       url: "/"
     })
   ], 10, _hoisted_1))

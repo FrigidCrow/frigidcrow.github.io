@@ -311,7 +311,7 @@ return (_ctx, _cache) => {
               createBaseVNode("li", null, [
                 createVNode(_component_BaseLink, {
                   url: "https://github.com/FrigidCrow",
-                  label: "Built by FrigidCrow"
+                  label: "由 FrigidCrow 制作"
                 })
               ])
             ]))

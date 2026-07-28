@@ -13396,67 +13396,67 @@ const RESOURCES = [
   {
     name: 'blueNoiseTexture',
     url: resolvePublicPath('gl/global/blue-noise.png'),
-    fileSize: 7168 // approximately 7KB (adjust based on actual file size)
+    fileSize: 7147 // 7KB (adjust based on actual file size)
   },
   {
     name: 'perlinTexture',
     url: resolvePublicPath('gl/global/perlin.webp'),
-    fileSize: 11264 // approximately 11KB (adjust based on actual file size)
+    fileSize: 10568 // 10KB (adjust based on actual file size)
   },
   {
     name: 'introModel',
     url: resolvePublicPath('gl/intro/intro_compressed.glb'),
-    fileSize: 713728 // approximately 697KB (adjust based on actual file size)
+    fileSize: 697340 // 681KB (adjust based on actual file size)
   },
   {
     name: 'investorsModel',
     url: resolvePublicPath('gl/investors/investors_compressed.glb'),
-    fileSize: 1097152 // approximately 1.05MB (adjust based on actual file size)
+    fileSize: 142744 // 139KB (adjust based on actual file size)
   },
   {
     name: 'portfolioModel',
     url: resolvePublicPath('gl/portfolio/portfolio.glb'),
-    fileSize: 39936 // approximately 39 KB (adjust based on actual file size)
+    fileSize: 38904 // 38KB (adjust based on actual file size)
   },
   {
     name: 'bgModel',
     url: resolvePublicPath('gl/global/bg.glb'),
-    fileSize: 49152 // approximately 48 KB (adjust based on actual file size)
+    fileSize: 39816 // 39KB (adjust based on actual file size)
   },
   {
     name: 'bubblesTexture',
     url: resolvePublicPath('gl/global/bubbles.png'),
-    fileSize: 102400 // approximately 100KB (adjust based on actual file size)
+    fileSize: 19871 // 19KB (adjust based on actual file size)
   },
   {
     name: 'outroModel',
     url: resolvePublicPath('gl/outro/outro_compressed.glb'),
-    fileSize: 524288 // approximately 512KB (adjust based on actual file size)
+    fileSize: 721968 // 705KB (adjust based on actual file size)
   },
   {
     name: 'waterNormals',
     url: resolvePublicPath('gl/global/waternormals.jpg'),
-    fileSize: 51200 // approximately 50KB (adjust based on actual file size)
+    fileSize: 248813 // 243KB (adjust based on actual file size)
   },
   {
     name: 'humanModel',
     url: resolvePublicPath('gl/global/human_2.glb'),
-    fileSize: 135168 // approximately 132 KB (adjust based on actual file size)
+    fileSize: 131908 // 129KB (adjust based on actual file size)
   },
   {
     name: 'rocksModel',
     url: resolvePublicPath('gl/global/rocks.glb'),
-    fileSize: 256000 // approximately 250KB (adjust based on actual file size)
+    fileSize: 249728 // 244KB (adjust based on actual file size)
   },
   {
     name: 'legsModel2',
     url: resolvePublicPath('gl/global/legs-fixed.glb'),
-    fileSize: 112640 // approximately 110KB (adjust based on actual file size)
+    fileSize: 128988 // 126KB (adjust based on actual file size)
   },
   {
     name: 'logoModel',
     url: resolvePublicPath('gl/global/logo.glb'),
-    fileSize: 47104 // approximately 46KB (adjust based on actual file size)
+    fileSize: 48236 // 47KB (adjust based on actual file size)
   }
   // add caustics video
   // {

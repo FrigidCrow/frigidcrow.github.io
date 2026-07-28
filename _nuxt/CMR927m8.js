@@ -76,7 +76,7 @@ const startTicker = () => {
 };
 
 const ariaLabel = computed(() => {
-  return isSoundMuted.value ? 'Enable sounds' : 'Mute sounds'
+  return isSoundMuted.value ? '开启声音' : '关闭声音'
 });
 
 const { $soundManager } = useNuxtApp();
@@ -118,15 +118,15 @@ return (_ctx, _cache) => {
   }, [
     createBaseVNode("span", _hoisted_2, [
       createBaseVNode("span", _hoisted_3, [
-        _cache[0] || (_cache[0] = createBaseVNode("span", { class: "sound-toggle__label" }, " SOUND ", -1)),
+        _cache[0] || (_cache[0] = createBaseVNode("span", { class: "sound-toggle__label" }, " 声音 ", -1)),
         createBaseVNode("span", {
           "aria-hidden": unref(isSoundMuted),
           class: "sound-toggle__label-status sound-toggle__label-status--off"
-        }, "OFF", 8, _hoisted_4),
+        }, "关", 8, _hoisted_4),
         createBaseVNode("span", {
           "aria-hidden": !unref(isSoundMuted),
           class: "sound-toggle__label-status sound-toggle__label-status--on"
-        }, "ON", 8, _hoisted_5)
+        }, "开", 8, _hoisted_5)
       ])
     ]),
     (openBlock(), createElementBlock("svg", _hoisted_6, [

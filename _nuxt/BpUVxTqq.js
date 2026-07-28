@@ -25,9 +25,9 @@ return (_ctx, _cache) => {
     createVNode(_component_SoundToggle),
     createVNode(_component_BackButton, { "is-visible": unref(isVisible) }, null, 8, ["is-visible"]),
     createVNode(_component_NavPrevNext, {
-      "prev-aria-label": "Go to previous company page",
+      "prev-aria-label": "前往上一个项目",
       "prev-url": unref(prevUrl),
-      "next-aria-label": "Go to next company page",
+      "next-aria-label": "前往下一个项目",
       "next-url": unref(nextUrl),
       "is-visible": unref(isVisible)
     }, null, 8, ["prev-url", "next-url", "is-visible"])

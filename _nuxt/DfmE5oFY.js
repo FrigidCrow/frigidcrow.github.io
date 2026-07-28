@@ -259,7 +259,7 @@ return (_ctx, _cache) => {
         ]),
         createBaseVNode("div", _hoisted_4$2, [
           createVNode(_component_BaseButton, {
-            label: "Back to homepage",
+            label: "返回首页",
             "on-click": onReadMoreClick
           })
         ])
@@ -267,7 +267,7 @@ return (_ctx, _cache) => {
     ]),
     createBaseVNode("div", _hoisted_5$1, [
       createVNode(_component_BaseButton, {
-        label: "Read more",
+        label: "了解更多",
         "on-click": onReadMoreClick,
         "is-small": true
       })
@@ -474,14 +474,14 @@ return (_ctx, _cache) => {
       ], 512),
       createBaseVNode("div", _hoisted_3$1, [
         createVNode(_component_BaseButton, {
-          label: "Back to homepage",
+          label: "返回首页",
           "on-click": onReadMoreClick
         })
       ])
     ]),
     createBaseVNode("div", _hoisted_4$1, [
       createVNode(_component_BaseButton, {
-        label: "Read more",
+        label: "了解更多",
         "on-click": onReadMoreClick,
         "is-small": true
       })
@@ -818,7 +818,7 @@ return (_ctx, _cache) => {
         ]),
         createBaseVNode("div", _hoisted_4, [
           createVNode(_component_BaseButton, {
-            label: "Back to homepage",
+            label: "返回首页",
             "on-click": onReadMoreClick
           })
         ])
@@ -827,9 +827,9 @@ return (_ctx, _cache) => {
     createBaseVNode("div", _hoisted_5, [
       createVNode(_component_NavPrevNext, {
         "is-vertical": true,
-        "prev-aria-label": "Show previous team member",
+        "prev-aria-label": "查看上一项能力",
         "on-prev-click": onPrevClick,
-        "next-aria-label": "Show next team member",
+        "next-aria-label": "查看下一项能力",
         "on-next-click": onNextClick,
         "is-disabled": unref(isTransitioning),
         "is-visible": unref(isVisible)
@@ -847,7 +847,7 @@ return (_ctx, _cache) => {
     ]),
     createBaseVNode("div", _hoisted_7, [
       createVNode(_component_BaseButton, {
-        label: "Read more",
+        label: "了解更多",
         "on-click": onReadMoreClick,
         "is-small": true
       })
@@ -906,7 +906,7 @@ const { data } = (
 if (!data?.value) {
   throw createError({
     statusCode: 404,
-    statusMessage: 'Page not found'
+    statusMessage: '页面不存在'
   })
 }
 

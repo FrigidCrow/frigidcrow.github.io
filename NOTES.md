@@ -2,7 +2,7 @@
 
 ## Provenance
 
-The working baseline was captured from `https://hashgraphvc.com/` on 2026-07-28. Same-origin Nuxt chunks, fonts, GLB models, textures, Draco/Basis decoders and current route payloads were downloaded. Referenced Sanity images and SVG files were also mirrored. WebGPU texture images use the local copies; four project-logo SVG URLs remain on Sanity because the original image component uses that host to produce matching SSR/client markup.
+The working baseline was captured from `https://hashgraphvc.com/` on 2026-07-28. Same-origin Nuxt chunks, fonts, GLB models, textures, Draco/Basis decoders and current route payloads were downloaded. Referenced Sanity images and SVG files were also mirrored. WebGPU textures and the four project-logo SVGs now use their local copies, with matching SSR and client payload URLs.
 
 The upstream response and a separate public mirror did not expose a license. Upstream files are kept as a source-replay baseline; personal changes are deliberately small and isolated in `personal.css`, `tools/personalize.mjs`, selected Nuxt strings and the standalone privacy page.
 

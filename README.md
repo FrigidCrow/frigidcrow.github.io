@@ -18,7 +18,11 @@ Visible copy and links can be changed in [`tools/personalize.mjs`](tools/persona
 
 ```bash
 node tools/personalize.mjs
+node tools/localize-zh.mjs
+node tools/optimize.mjs
 ```
+
+Run the scripts in that order: brand personalization, Chinese localization, then safe runtime/static optimizations.
 
 Global brand overrides live in [`personal.css`](personal.css). Models and textures live under `gl/`; locally mirrored editorial assets live under `cdn.sanity.io/`. See [`PERSONALIZE.md`](PERSONALIZE.md) before changing portraits, project logos or slugs.
 
@@ -31,8 +35,9 @@ Push the `main` branch to `FrigidCrow/frigidcrow.github.io`. The included GitHub
 - Rendering: Three.js r182, WebGPU when available, WebGL fallback otherwise
 - Framework: Nuxt/Vue static output
 - Compression: Draco and Basis decoders are included locally
+- Performance: desktop DPR is capped at 1.25, mobile DPR at 1; mobile fluid simulation is disabled and hidden tabs pause rendering
+- Locality: project SVGs, portraits, models, textures, fonts and decoder assets are served from this site
 - Routes: `/`, four `/companies/*` pages and `/privacy-policy/`
 - Analytics: no third-party analytics or tracking snippets are included
 
 The mirrored upstream files did not include a license. This repository therefore does not assert a new license over upstream code or assets. See [`NOTES.md`](NOTES.md) and [`CLONE_REPORT.md`](CLONE_REPORT.md) for provenance and QA details.
-

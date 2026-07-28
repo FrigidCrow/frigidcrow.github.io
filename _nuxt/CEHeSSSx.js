@@ -75738,8 +75738,8 @@ return (_ctx, _cache) => {
                         class: "loader__title ff-title",
                         content: 
                 !unref(isWebGPUSupported) && !unref(isWebGPUBrowserSupported)
-                  ? 'Your device is<br /> not supported'
-                  : 'This experience requires<br /> a modern browser'
+                  ? '当前设备<br />不受支持'
+                  : '此体验需要<br />现代浏览器'
               ,
                         "content-tag": "p",
                         type: "chars",
@@ -75748,10 +75748,10 @@ return (_ctx, _cache) => {
                       }, null, 8, ["content"]),
                       (unref(isWebGPUSupported) && !unref(isWebGPUBrowserSupported))
                         ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [
-                            _cache[0] || (_cache[0] = createBaseVNode("p", { class: "loader__fallback-description anim-fade" }, " We've built this site using next-generation web technology that isn't supported on your current browser. Update to the latest version to view the experience as intended. ", -1)),
+                            _cache[0] || (_cache[0] = createBaseVNode("p", { class: "loader__fallback-description anim-fade" }, " 本站使用了新一代网页技术，当前浏览器暂不支持。请升级到最新版本，以获得完整体验。 ", -1)),
                             createBaseVNode("div", _hoisted_3$1, [
                               createVNode(_component_BaseButton, {
-                                label: "Update your browser",
+                                label: "升级浏览器",
                                 url: "https://browsehappy.com",
                                 "has-animation-in": true,
                                 "is-visible": unref(isFallbackVisible)
@@ -75763,9 +75763,9 @@ return (_ctx, _cache) => {
                     createBaseVNode("div", _hoisted_4$1, [
                       (unref(isWebGPUSupported) && !unref(isWebGPUBrowserSupported))
                         ? (openBlock(), createElementBlock("p", _hoisted_5$1, [...(_cache[1] || (_cache[1] = [
-                            createTextVNode(" Best viewed in the latest versions", -1),
+                            createTextVNode(" 建议使用最新版本", -1),
                             createBaseVNode("br", null, null, -1),
-                            createTextVNode("of Chrome or Edge ", -1)
+                            createTextVNode("Chrome 或 Edge 浏览器 ", -1)
                           ]))]))
                         : createCommentVNode("", true)
                     ])
@@ -75796,7 +75796,7 @@ return (_ctx, _cache) => {
                           class: normalizeClass([{ 'loader__btn-loader--hidden': unref(isLoadingDone) }, "loader__btn-loader anim-fade"])
                         }, [
                           _cache[3] || (_cache[3] = createBaseVNode("span", { class: "loader__btn-loader-inner oh" }, [
-                            createBaseVNode("span", { class: "loader__btn-loader-label" }, " Loading ")
+                            createBaseVNode("span", { class: "loader__btn-loader-label" }, " 加载中 ")
                           ], -1)),
                           (openBlock(), createElementBlock("svg", _hoisted_8$1, [
                             _cache[2] || (_cache[2] = createBaseVNode("path", {
@@ -75814,7 +75814,7 @@ return (_ctx, _cache) => {
                           ]))
                         ], 2),
                         createVNode(_component_BaseButton, {
-                          label: "Enter with audio",
+                          label: "开启声音进入",
                           "on-click": onSoundEnableClick,
                           "has-animation-in": true,
                           "is-visible": unref(isLoadingDone),
@@ -75828,13 +75828,13 @@ return (_ctx, _cache) => {
                         onClick: onSoundDisableClick
                       }, [...(_cache[4] || (_cache[4] = [
                         createBaseVNode("span", { class: "loader__btn-no-sound-wrapper oh" }, [
-                          createBaseVNode("span", { class: "loader__btn-no-sound-label" }, " Enter without audio ")
+                          createBaseVNode("span", { class: "loader__btn-no-sound-label" }, " 静音进入 ")
                         ], -1)
                       ]))], 2),
                       _cache[5] || (_cache[5] = createBaseVNode("p", { class: "loader__copy ttu anim-fade" }, [
-                        createTextVNode(" This experience includes sound."),
+                        createTextVNode(" 本体验包含声音。"),
                         createBaseVNode("br"),
-                        createTextVNode("For the intended atmosphere, enable audio. ")
+                        createTextVNode("建议开启声音，以获得完整氛围。 ")
                       ], -1))
                     ])
                   ]),
@@ -76211,13 +76211,13 @@ const _sfc_main$1 = {
 const props = __props;
 
 const title = computed(() =>
-  props.error.statusCode === 404 ? 'Page not<br /> found' : 'Something<br /> went wrong'
+  props.error.statusCode === 404 ? '页面<br />不存在' : '页面出现<br />异常'
 );
 
 const description = computed(() =>
   props.error.statusCode === 404
-    ? 'The page you\'re looking for doesn\'t exist or has been moved.'
-    : 'An unexpected error occurred. Please try again later.'
+    ? '你访问的页面不存在，或已被移动。'
+    : '发生了意外错误，请稍后再试。'
 );
 
 const goHome = () => {
@@ -76237,13 +76237,13 @@ return (_ctx, _cache) => {
         createBaseVNode("p", _hoisted_5, toDisplayString(unref(description)), 1),
         createBaseVNode("div", _hoisted_6, [
           createVNode(_component_BaseButton, {
-            label: "Go back home",
+            label: "返回首页",
             "on-click": goHome
           })
         ])
       ]),
       createBaseVNode("div", _hoisted_7, [
-        createBaseVNode("p", _hoisted_8, toDisplayString(__props.error.statusCode) + " — " + toDisplayString(__props.error.statusMessage || 'An unexpected error occurred'), 1)
+        createBaseVNode("p", _hoisted_8, toDisplayString(__props.error.statusCode) + " — " + toDisplayString(__props.error.statusMessage || '发生了意外错误'), 1)
       ])
     ]),
     createVNode(unref(LogoSvg), {
