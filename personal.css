@@ -1,0 +1,30 @@
+.header-logo__type {
+  display: none;
+}
+
+.header-logo::after {
+  color: #eee;
+  content: "FRIGIDCROW";
+  font-family: NeueMontrealWeb, sans-serif;
+  font-size: clamp(10px, 1.15rem, 1.15rem);
+  font-weight: 700;
+  letter-spacing: .08em;
+  opacity: 0;
+  transform: translateY(.4rem);
+  transition: opacity .6s linear .25s, transform .8s cubic-bezier(.14, 1, .34, 1) .25s;
+}
+
+.header-logo--visible::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.loader__title {
+  max-width: 26rem;
+}
+
+@media (min-width: 1024px) {
+  .header-logo::after {
+    font-size: 1.15rem;
+  }
+}
