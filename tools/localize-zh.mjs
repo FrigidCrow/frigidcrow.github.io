@@ -34,7 +34,7 @@ const contentReplacements = [
 
   ['FrigidCrow is an independent creative technologist working across interaction design, frontend engineering, real-time 3D and emerging technology. I turn ambitious ideas into focused digital experiences — from first prototype to production.', 'FrigidCrow 是一名独立创意技术开发者，工作横跨交互设计、前端工程、实时 3D 与新兴技术。我把大胆的想法转化为聚焦的数字体验，从第一个原型一直做到正式上线。'],
   ['My work brings design, engineering and systems thinking into one process. The goal is not decoration alone: every interaction should clarify an idea, every technical choice should support the experience, and every prototype should be able to grow into a real product.', '我的工作把设计、工程与系统思维融为一个过程。每一次交互都应该让想法更清晰，每一个技术选择都应该服务于体验，每一个原型都应该能够成长为真正的产品。'],
-  ['I like difficult briefs, unfamiliar tools and projects that need both taste and technical depth. My practice spans product thinking, creative development, Three.js, WebGL and rapid experimentation.', '我喜欢困难的命题、陌生的工具，以及同时需要审美与技术深度的项目。我的实践涵盖产品思维、创意开发、Three.js、WebGL 与快速实验。'],
+  ['I like difficult briefs, unfamiliar tools and projects that need both taste and technical depth. My practice spans product thinking, creative development, Three.js, WebGL and rapid experimentation.', '我喜欢困难的命题、陌生的工具，以及同时需要审美与技术深度的项目。我的实践涵盖产品思维、创意开发、Three.js、WebGL与快速实验。'],
   ['The result is work that feels considered, performs well and gives people something worth remembering.', '最终的作品应该经过思考、性能可靠，并给人留下值得记住的体验。'],
 
   ['Open to ambitious ideas\\nand meaningful collaborations', '期待大胆的想法\\n与有意义的合作'],

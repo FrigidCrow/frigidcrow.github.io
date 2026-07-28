@@ -51,17 +51,44 @@ html[lang="zh-CN"] .ff-detail {
   font-family: NeueMontrealWeb, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 }
 
-.sound-toggle__label-wrapper {
+html[lang="zh-CN"] .sound-toggle__label-wrapper {
   padding-left: 0;
 }
 
-.sound-toggle__label-inner {
+html[lang="zh-CN"] .sound-toggle__label-inner {
   align-items: center;
-  column-gap: .35em;
+  column-gap: .5em;
+  display: grid;
+  grid-template-columns: max-content 1em;
 }
 
-.sound-toggle--active .sound-toggle__label {
-  transform: none;
+html[lang="zh-CN"] .sound-toggle--active .sound-toggle__label {
+  transform: translateX(0);
+}
+
+html[lang="zh-CN"] .sound-toggle__label,
+html[lang="zh-CN"] .sound-toggle__label-status {
+  grid-row: 1;
+}
+
+html[lang="zh-CN"] .sound-toggle__label {
+  grid-column: 1;
+}
+
+html[lang="zh-CN"] .sound-toggle__label-status {
+  grid-column: 2;
+  justify-self: center;
+}
+
+html[lang="zh-CN"] .sound-toggle__label-status--on {
+  position: static;
+  right: auto;
+  top: auto;
+}
+
+.home-hero__btn,
+.home-hero__btn-label {
+  align-items: center;
 }
 
 .company-content__fig {
@@ -108,77 +135,82 @@ html[lang="zh-CN"] .ff-detail {
     line-height: 1.12;
   }
 
-  .home-investors__wrapper {
+  html[lang="zh-CN"] .home-investors__wrapper {
     grid-column: 2 / span 5;
     max-width: 48rem;
   }
 
-  .home-investors__title p:first-child {
+  html[lang="zh-CN"] .home-investors__title p:first-child {
     left: 0;
   }
 
-  .home-investors__title p:last-child {
-    left: 8rem;
+  html[lang="zh-CN"] .home-investors__title p:last-child {
+    left: 0;
     right: auto;
     text-align: left;
   }
 
-  .home-investors__copy-wrapper {
+  html[lang="zh-CN"] .home-investors__copy-wrapper {
     margin-top: 5.6rem;
   }
 
-  .home-investors__copy {
+  html[lang="zh-CN"] .home-investors__copy {
     max-width: 48rem;
   }
 
-  .home-portfolio__title {
+  html[lang="zh-CN"] .home-portfolio__title {
     grid-column: 2 / span 5;
     margin-top: 20rem;
   }
 
-  .home-portfolio__title p:first-child {
+  html[lang="zh-CN"] .home-portfolio__title p:first-child {
     left: 0;
   }
 
-  .home-portfolio__title p:nth-child(2) {
-    left: 6rem;
+  html[lang="zh-CN"] .home-portfolio__title p:nth-child(2) {
+    left: 8rem;
   }
 
-  .home-portfolio__title p:nth-child(3) {
-    left: 12rem;
-  }
-
-  .home-portfolio__copy-wrapper {
+  html[lang="zh-CN"] .home-portfolio__copy-wrapper {
     grid-column: 8 / span 4;
     margin-bottom: 8rem;
   }
 
-  .home-portfolio__copy {
+  html[lang="zh-CN"] .home-portfolio__copy {
     max-width: 42rem;
   }
 
-  .home-team__title p:first-child {
+  html[lang="zh-CN"] .home-team__title p:first-child {
     left: 0;
   }
 
-  .home-team__title p:last-child {
+  html[lang="zh-CN"] .home-team__title p:last-child {
     left: 6rem;
   }
 
-  .company-content__wrapper {
+  html[lang="zh-CN"] .home-team__wrapper {
+    grid-column: 2 / span 6;
+    max-width: 60rem;
+  }
+
+  html[lang="zh-CN"] .home-team__copy {
+    max-width: 60rem;
+  }
+
+  html[lang="zh-CN"] .company-content__wrapper {
     max-width: 58rem;
   }
 
-  .company-content__title {
+  html[lang="zh-CN"] .company-content__title {
     font-size: 4rem;
     margin-bottom: 2rem;
   }
 
-  .company-content__url {
+  html[lang="zh-CN"] .company-content__url {
     margin-bottom: 2.8rem;
   }
 
-  .footer__title {
+  html[lang="zh-CN"] .footer__title {
     max-width: 68rem;
   }
 }

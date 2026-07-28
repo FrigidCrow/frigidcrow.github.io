@@ -41,7 +41,11 @@ const globalReplacements = [
     '我的工作把设计、工程与系统思维融为一个过程。每一次交互都应该让想法更清晰，每一个技术选择都应该服务于体验，每一个原型都应该能够成长为真正的产品。',
     '这里收录我公开维护的产品与开源项目，涵盖 AI 辅助开发、工程工具、个人系统与交互式 Web 体验。'
   ],
-  ['<p>设计</p><p>代码与</p><p>系统</p>', '<p>公开</p><p>产品与</p><p>开源实践</p>'],
+  ['WebGL 与快速实验。', 'WebGL与快速实验。'],
+  ['WebGL\u00a0与快速实验。', 'WebGL与快速实验。'],
+  ['<p>用心</p><p>构建</p>', '<p>用心构建</p>'],
+  ['<p>公开</p><p>产品与</p><p>开源实践</p>', '<p>公开产品</p><p>与开源实践</p>'],
+  ['<p>设计</p><p>代码与</p><p>系统</p>', '<p>公开产品</p><p>与开源实践</p>'],
   ['"设计"', '"公开"'],
   ['"代码与"', '"产品与"'],
   ['"系统"', '"开源实践"'],
@@ -124,17 +128,29 @@ function transformNuxtGraph(nodes) {
     if (value && typeof value === 'object' && !Array.isArray(value)) return resolve(value.current);
     return null;
   };
-  const updateCopy = (copyRef, text) => {
-    const blocks = resolve(copyRef);
-    if (!Array.isArray(blocks)) return;
-    for (const blockRef of blocks) {
+  const updateBlockText = (blockRef, text) => {
       const block = resolve(blockRef);
       const children = block && resolve(block.children);
-      if (!Array.isArray(children)) continue;
+      if (!Array.isArray(children)) return;
       for (const childRef of children) {
         const child = resolve(childRef);
         if (child && typeof child === 'object' && 'text' in child) setValue(child, 'text', text);
       }
+  };
+  const updateCopy = (copyRef, text) => {
+    const blocks = resolve(copyRef);
+    if (!Array.isArray(blocks)) return;
+    for (const blockRef of blocks) {
+      updateBlockText(blockRef, text);
+    }
+  };
+  const updatePortableTitle = (titleRef, lines) => {
+    const blocks = resolve(titleRef);
+    if (!Array.isArray(blocks) || blocks.length < lines.length) return;
+    lines.forEach((text, index) => updateBlockText(blocks[index], text));
+    if (blocks.length !== lines.length) {
+      blocks.splice(lines.length);
+      changed += 1;
     }
   };
   const updateSeo = (seoRef, project) => {
@@ -191,6 +207,8 @@ function transformNuxtGraph(nodes) {
 
     if ('socials' in node && 'footerTitle' in node) updateSocials(node, false);
     if ('socials' in node && 'footer_title' in node) updateSocials(node, true);
+    if ('investors_title' in node) updatePortableTitle(node.investors_title, ['用心构建']);
+    if ('portfolio_title' in node) updatePortableTitle(node.portfolio_title, ['公开产品', '与开源实践']);
   }
 
   return { nodes, changed };
