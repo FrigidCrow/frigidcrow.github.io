@@ -23,8 +23,171 @@
   max-width: 26rem;
 }
 
+html[lang="zh-CN"] body,
+html[lang="zh-CN"] button {
+  font-family: ParaboleWeb, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+html[lang="zh-CN"] .h1,
+html[lang="zh-CN"] .h2,
+html[lang="zh-CN"] .h3,
+html[lang="zh-CN"] h1,
+html[lang="zh-CN"] h2,
+html[lang="zh-CN"] h3,
+html[lang="zh-CN"] .ff-title {
+  font-family: HashgraphWeb, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+html[lang="zh-CN"] .body-copy,
+html[lang="zh-CN"] .ff-labor {
+  font-family: ParaboleWeb, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  line-height: 1.72;
+  text-wrap: pretty;
+}
+
+html[lang="zh-CN"] .btn-label,
+html[lang="zh-CN"] .btn-label-small,
+html[lang="zh-CN"] .ff-detail {
+  font-family: NeueMontrealWeb, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+.sound-toggle__label-wrapper {
+  padding-left: 0;
+}
+
+.sound-toggle__label-inner {
+  align-items: center;
+  column-gap: .35em;
+}
+
+.sound-toggle--active .sound-toggle__label {
+  transform: none;
+}
+
+.company-content__fig {
+  display: none;
+}
+
+.company-content__title--hidden {
+  pointer-events: auto;
+  position: static;
+  visibility: visible;
+}
+
+.company-content__wrapper {
+  max-width: min(31rem, calc(100vw - 5.6rem));
+}
+
+.company-content__title {
+  font-size: 3.2rem;
+  line-height: 1.12;
+  margin-bottom: 1.8rem;
+}
+
+.company-content__url {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.footer__title {
+  line-height: 1.1;
+  max-width: calc(100vw - 5.6rem);
+}
+
+.footer__list--socials {
+  column-gap: clamp(4rem, 8vw, 10rem);
+}
+
 @media (min-width: 1024px) {
   .header-logo::after {
     font-size: 1.15rem;
+  }
+
+  html[lang="zh-CN"] .h1,
+  html[lang="zh-CN"] h1 {
+    line-height: 1.12;
+  }
+
+  .home-investors__wrapper {
+    grid-column: 2 / span 5;
+    max-width: 48rem;
+  }
+
+  .home-investors__title p:first-child {
+    left: 0;
+  }
+
+  .home-investors__title p:last-child {
+    left: 8rem;
+    right: auto;
+    text-align: left;
+  }
+
+  .home-investors__copy-wrapper {
+    margin-top: 5.6rem;
+  }
+
+  .home-investors__copy {
+    max-width: 48rem;
+  }
+
+  .home-portfolio__title {
+    grid-column: 2 / span 5;
+    margin-top: 20rem;
+  }
+
+  .home-portfolio__title p:first-child {
+    left: 0;
+  }
+
+  .home-portfolio__title p:nth-child(2) {
+    left: 6rem;
+  }
+
+  .home-portfolio__title p:nth-child(3) {
+    left: 12rem;
+  }
+
+  .home-portfolio__copy-wrapper {
+    grid-column: 8 / span 4;
+    margin-bottom: 8rem;
+  }
+
+  .home-portfolio__copy {
+    max-width: 42rem;
+  }
+
+  .home-team__title p:first-child {
+    left: 0;
+  }
+
+  .home-team__title p:last-child {
+    left: 6rem;
+  }
+
+  .company-content__wrapper {
+    max-width: 58rem;
+  }
+
+  .company-content__title {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .company-content__url {
+    margin-bottom: 2.8rem;
+  }
+
+  .footer__title {
+    max-width: 68rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header-logo::after,
+  .sound-toggle__label,
+  .sound-toggle__label-status,
+  .sound-toggle__svg {
+    transition-duration: .01ms !important;
   }
 }

@@ -2,7 +2,7 @@
 
 ## Copy and links
 
-Edit the replacement table in `tools/personalize.mjs`, then run `node tools/personalize.mjs`, `node tools/localize-zh.mjs`, and `node tools/optimize.mjs` in that order. Keep both plain and escaped (`\\u002F`) URL variants when a value also appears in Nuxt payload JSON.
+Edit the replacement table in `tools/personalize.mjs`, then run `node tools/personalize.mjs`, `node tools/localize-zh.mjs`, `node tools/review-polish.mjs`, and `node tools/optimize.mjs` in that order. Keep both plain and escaped (`\\u002F`) URL variants when a value also appears in Nuxt payload JSON.
 
 The loader name and runtime domain are in `_nuxt/CEHeSSSx.js`. Footer credit text is in `_nuxt/DwgGGfV0.js`. These are minified build artifacts, so search for the existing FrigidCrow string before editing.
 

@@ -19,10 +19,11 @@ Visible copy and links can be changed in [`tools/personalize.mjs`](tools/persona
 ```bash
 node tools/personalize.mjs
 node tools/localize-zh.mjs
+node tools/review-polish.mjs
 node tools/optimize.mjs
 ```
 
-Run the scripts in that order: brand personalization, Chinese localization, then safe runtime/static optimizations.
+Run the scripts in that order: brand personalization, Chinese localization, public-project and layout refinements, then safe runtime/static optimizations.
 
 Global brand overrides live in [`personal.css`](personal.css). Models and textures live under `gl/`; locally mirrored editorial assets live under `cdn.sanity.io/`. See [`PERSONALIZE.md`](PERSONALIZE.md) before changing portraits, project logos or slugs.
 
